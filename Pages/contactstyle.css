@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+/* Universal */
+p {
+  color: #fff;
+}
+body {
+  background-color: #10403d;
+  color: #fff;
+  font-family: sans-serif;
+  width: 100%
+  min-width: 320px;
+}
+main{
+}
+/* Navigation Bar */
+header{
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  background-color: #ffffff;
+  color: #000000;
+}
+.nameBox {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+header h1 {
+}
+header nav {
+}
+header nav ul {
+  list-style: none;
+  font-size: 1em;
+}
+.navButtons ul li {
+  display: flex;
+  margin: 30px;
+}
+
+.navButtons ul li div {
+  display: block;
+  user-select: none;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* Further Nav Button animations are in script.js*/
+/* End of Navigation Bar */
+
+
+/* Section Head */
+.contactHead {
+  position: fixed;
+  padding-left: 250px;
+  height: 50px;
+  width: 98%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  top: 0px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 0 10px 0 0 #40e0d0	;
+}
+.pseudoCurve {
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
+  margin-top: -40px;
+  margin-left: 20%;
+  height: 60px;
+  width: 30px;
+  border-radius: 30px 0 0 0;
+  box-shadow: 0 -30px 0 0 #ffffff, inset 0px 10px #40e0d0	;
+}
+/* End of Section Head */
+
+/*Contact Info*/
+.contact {
+  margin: 90px 5% 50px 25%;
+  background-color: #186661;
+  border-radius: 30px;
+  padding: 30px 20px 20px 20px;
+  box-shadow: 0 10px #0b2b29;
+  user-select: none;
+}
+.innerContact {
+}
+
+img {
+  height: 20px;
+  width: auto;
+}
+.innerContact > div {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+#firstPart {
+  background-color: bule;
+  margin: 0 0 10px 0;
+}
+#secondPart,
+#thirdPart {
+  padding: 10px;
+  display: flex;
+}
+#secondPart img,
+#thirdPart img {
+  margin: 10px;
+}
+
+#contactShape1,
+#contactShape2 {
+  display: flex;
+  align-items: center;
+  width: 10em;
+  border-radius: 10px;
+}
+/*End of Contact Info*/
+
+/* Screen Sizing Section ----------------------------------------*/
+@media only screen and (max-width: 600px) {
+  /* Navigation Bar */
+  header{
+    position: fixed;
+    z-index: 1;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nameBox {
+    font-size: .7em;
+    width: 14em;
+    text-align: center;
+    transition: width 1s;
+  }
+  header nav ul {
+    font-size: .9em;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+  .navButtons ul li {
+    margin: 5px 30px 5px 5px;
+  }
+  /* End of Navigation Bar */
+
+  /* About Me Section */
+  /* Section Heads */
+  .contactHead {
+    z-index: 2;
+    padding: 0;
+    margin: 4em 0 0 0;
+    font-size: .8em;
+    height: 40px;
+    width: 100%;
+    border-radius: 0 0 20px 0;
+    box-shadow: 0 10px 0 0 #40e0d0;
+  }
+.pseudoCurve {
+  z-index: 2;
+  margin-top: -36.39px;
+  margin-left: 0;
+}
+
+  /* End of Section Heads */
+  /* Main Content setup for Sections */
+  .contact {
+    margin: 8em 5% 50px 5%;
+    z-index: 5;
+  }
+  /* End of Main Content setup for Sections */
+  .contact div {
+  }
+
+  .contact div p {
+
+  }
+  .contact div > img {
+  }
+}

@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+/* Universal */
+p {
+  color: #fff;
+}
+body {
+  background-color: #10403d;
+  color: #fff;
+  font-family: sans-serif;
+  width: 100%
+  min-width: 320px;
+  user-select: none;
+}
+main{
+}
+/* Navigation Bar */
+header{
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  background-color: #ffffff;
+  color: #000000;
+}
+.nameBox {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+header h1 {
+}
+header nav {
+}
+header nav ul {
+  list-style: none;
+  font-size: 1em;
+}
+.navButtons ul li {
+  display: flex;
+  margin: 30px;
+}
+
+.navButtons ul li div {
+  display: block;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/*
+a:hover {
+  color: #40e0d0	;
+  cursor: pointer;
+} */
+
+/* Further Nav Button animations are in script.js*/
+
+/* End of Navigation Bar */
+
+/* About Me Section */
+/* Section Heads */
+.aboutMeHead,
+.projectHead,
+.skillHead {
+  position: fixed;
+  padding-left: 250px;
+  height: 50px;
+  width: 98%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  top: 0px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 0 10px 0 0 #40e0d0	;
+}
+.pseudoCurve {
+  position: fixed;
+  z-index: 1;
+  background-color: #10403d;
+  margin-top: -20px;
+  margin-left: 20%;
+  height: 60px;
+  width: 30px;
+  border-radius: 30px 0 0 0;
+  box-shadow: 0 -30px 0 0 #ffffff, inset 0px 10px #40e0d0	;
+}
+
+/* End of Section Heads */
+/* Main Content setup for Sections */
+.aboutMe,
+.projectContainer,
+.skillContainer {
+  margin-left: 20%;
+  margin-top: 70px;
+}
+/* End of Main Content setup for Sections */
+.aboutMe div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutMe div p {
+  flex-grow: 2;
+  text-align: center;
+}
+.aboutMe > div img {
+  height: 150px;
+  width: auto;
+  margin: 15px 7% 10px 0px;
+  border-radius: 30px;
+  box-shadow: 0 10px #40e0d0;
+  transition: height 1s, width 1s;
+}
+
+#aboutMeText {
+  padding: 30px 20% 0px 50px;
+  margin-bottom: 40px;
+}
+
+/* End of About Me Section */
+/* Project Section */ 
+
+.projectContainer {
+  padding: 20px 50px 50px 50px;
+  background-color: #10403d;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #071c1b;
+  border-radius: 20px;
+  box-shadow: 0 20px inset #0b2b29;
+}
+
+.projects,
+.project {
+  border-radius: 25px;
+  text-align: center
+}
+
+.project {
+  background-color: #186661;
+  margin: 40px 30px 30px 30px;
+  box-shadow: 0px 20px #0b2b29;
+  max-width: 260px;
+}
+#project3 {
+  margin-bottom: 60px;
+}
+
+.project img {
+  border-radius: 25px 25px 0 0;
+  margin-top: 5%;
+  height: auto;
+  width: 90%;
+}
+.project p {
+  border-radius: 0px 0px 25px 25px;
+  padding: 8px;
+  background-color: #186661;
+}
+/* End of Project Section */
+
+/* Skill Section */
+.skillContainer {
+  background-color: #10403d;
+  padding: 10px 40px 40px 40px;
+  text-align: center;
+}
+.skills {
+  background-color: #186661;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 0 20px #0b2b29;
+  padding: 20px;
+}
+.skills div {
+  margin: 10px;
+  width: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills img {
+  width: 30px;
+  height: auto;
+}
+
+.skills p {
+  color: #000;
+}
+/* End of Skill Section */
+
+/* Cancellations */
+
+.aboutMeContent {
+  display: none;
+}
+
+.projectContent {
+  display: none;
+}
+
+.skillContent {
+  display: none;
+}
+
+/* Screen Sizing Section ----------------------------------------*/
+@media only screen and (max-width: 600px) {
+  /* Navigation Bar */
+  header{
+    position: fixed;
+    z-index: 1;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nameBox {
+    font-size: .7em;
+    width: 14em;
+    text-align: center;
+    transition: width 1s;
+  }
+  header nav ul {
+    font-size: .9em;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+  .navButtons ul li {
+    margin: 5px 5px 5px 5px;
+  }
+  /* End of Navigation Bar */
+
+  /* About Me Section */
+  /* Section Heads */
+  .aboutMeHead,
+  .projectHead,
+  .skillHead {
+    z-index: 2;
+    padding: 0;
+    margin: 4em 0 0 0;
+    font-size: .8em;
+    height: 40px;
+    width: 100%;
+    border-radius: 0 0 20px 0;
+    box-shadow: 0 10px 0 0 #40e0d0;
+  }
+.pseudoCurve {
+  z-index: 2;
+  margin-top: -36.39px;
+  margin-left: 0;
+}
+
+  /* End of Section Heads */
+  /* Main Content setup for Sections */
+  .aboutMe,
+  .projectContainer,
+  .skillContainer {
+    margin-left: 0;
+    margin-top: 8em;
+  }
+  /* End of Main Content setup for Sections */
+  .aboutMe div {
+  }
+  .aboutMe div p {
+    flex-grow: 2;
+    text-align: center;  
+    min-width: 50%;
+  }
+  .aboutMe > div img {
+    height: 100px;
+    width: auto;
+    margin: 15px 7% 10px 0px;
+    border-radius: 30px;
+    box-shadow: 0 10px #40e0d0;
+  }
+
+  #aboutMeText {
+    padding: 30px 10% 0px 10%;
+  }
+  /* End of About Me Section */
+}
